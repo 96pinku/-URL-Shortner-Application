@@ -11,7 +11,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Middleware
-app.use(cors()); 
+app.use(cors({
+    origin:"https://url-shortner-application-c2d8.vercel.app"
+})); 
 app.use(express.json()); 
 
 mongoose.connect(process.env.MONGO_URI)
