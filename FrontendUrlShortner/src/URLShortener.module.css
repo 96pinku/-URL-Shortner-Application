@@ -1,0 +1,194 @@
+
+* {    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #ec0aec, #21d70d);
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  
+  .input {
+    padding: 18px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .input:focus {
+    border-color: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 198, 255, 0.6);
+  }
+  
+  .button {
+    padding: 18px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #021928;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: red;
+    transform: scale(1.05);
+  }
+  
+  .result {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .shortUrl {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .shortUrl a {
+    color: #007cc7;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .shortUrl a:hover {
+    text-decoration: underline;
+  }
+  .visitBtn {
+    padding: 12px 30px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .visitBtn:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive Design */
+  
+  /* Tablet and smaller devices */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  
+    .input,
+    .button {
+      font-size: 1rem;
+      padding: 14px;
+    }
+  
+    .shortUrl {
+      font-size: 1.2rem;
+    }
+  
+    .visitBtn {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Mobile devices */
+  @media (max-width: 480px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .input {
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+  
+    .button {
+      padding: 12px;
+      font-size: 1rem;
+    }
+  
+    .result {
+      padding: 20px;
+    }
+  
+    .shortUrl {
+      font-size: 1rem;
+    }
+  
+    .visitBtn {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 1200px) {
+    .container {
+      padding: 40px;
+    }
+  
+    .title {
+      font-size: 3.5rem;
+    }
+  
+    .input {
+      padding: 20px;
+      font-size: 1.4rem;
+    }
+  
+    .button {
+      padding: 20px;
+      font-size: 1.5rem;
+    }
+  
+    .result {
+      max-width: 800px;
+    }
+  
+    .shortUrl {
+      font-size: 1.8rem;
+    }
+  
+    .visitBtn {
+      font-size: 1.4rem;
+    }
+  }
+  
