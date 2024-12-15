@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors({
-    origin:"https://url-shortner-application-c2d8.vercel.app"
+    origin:"https://url-shortner-application-psi.vercel.app"
 })); 
 app.use(express.json()); 
 
