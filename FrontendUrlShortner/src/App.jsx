@@ -14,7 +14,7 @@ function App() {
 
     try {
       console.log('API call');
-      const response = await axios.post('https://url-shortner-application-2.onrender.com/', { url: longUrl });
+      const response = await axios.post('http://localhost:8080/api/', { url: longUrl });
       console.log(response.data);
       alert(response.data.message);
       setShortUrl(response.data.link); 
